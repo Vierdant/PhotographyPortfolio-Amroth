@@ -348,9 +348,11 @@ a:link, a:visited {
 }
 */
 
-.project-card img {
-    width: 50vh;
+.hidden {
+    display: none;
 }
+
+
 
 @media only screen and (max-width: 900px) {
     .hero {
