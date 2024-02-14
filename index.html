@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="index.js" type="text/javascript" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="top-nav">
         <img src="./assets/signature.png" alt="icon" width="80"/>
-        <div class="top-right">
-            <a href="index.html#contact-me">Contact</a>
-            <a href="index.html#about-me">About me</a>
-            <a href="projects.html">Projects</a>
-            <a class="active" href="index.html">Home</a>
-        </div>
+        <a href="index.html#contact-me">Contact</a>
+        <a href="index.html#about-me">About me</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="index.html">Home</a>
     </div>
     <div class="hero">
         <div class="">
@@ -27,222 +29,97 @@
     <div class="projects">
         <h2>Projects</h2>
         <div class="project-list">
-            <div class="project-card">
-                <ol class="card-viewport">
-                    <li id="card-slide1" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide2" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide3" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide4" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                </ol>
-                <aside class="card-navigation">
-                    <ol class="card-navigation-list">
-                        <li class="card-navigation-item">
-                            <a href="#card-slide1" 
-                            class="card-navigation-button">Slide 1</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide2" 
-                            class="card-navigation-button">Slide 2</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide3" 
-                            class="card-navigation-button">Slide 3</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide4" 
-                            class="card-navigation-button">Slide 4</a>
-                        </li>
-                    </ol>
-                </aside>
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="project-card">
-                <ol class="card-viewport">
-                    <li id="card-slide5" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide6" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide7" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide8" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                </ol>
-                <aside class="card-navigation">
-                    <ol class="card-navigation-list">
-                        <li class="card-navigation-item">
-                            <a href="#card-slide5" 
-                            class="card-navigation-button">Slide 5</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide6" 
-                            class="card-navigation-button">Slide 6</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide7" 
-                            class="card-navigation-button">Slide 7</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide8" 
-                            class="card-navigation-button">Slide 8</a>
-                        </li>
-                    </ol>
-                </aside>
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="project-card">
-                <ol class="card-viewport">
-                    <li id="card-slide9" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide10" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide11" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide12" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                </ol>
-                <aside class="card-navigation">
-                    <ol class="card-navigation-list">
-                        <li class="card-navigation-item">
-                            <a href="#card-slide9" 
-                            class="card-navigation-button">Slide 9</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide10" 
-                            class="card-navigation-button">Slide 10</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide11" 
-                            class="card-navigation-button">Slide 11</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide12" 
-                            class="card-navigation-button">Slide 12</a>
-                        </li>
-                    </ol>
-                </aside>
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="project-card">
-                <ol class="card-viewport">
-                    <li id="card-slide13" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide14" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide15" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                    <li id="card-slide16" tabindex="0" class="card-slide">
-                        <div class="card-snapper">
-                            <img src="./assets/placeholder.webp" alt="placeholder">
-                        </div>
-                    </li>
-                </ol>
-                <aside class="card-navigation">
-                    <ol class="card-navigation-list">
-                        <li class="card-navigation-item">
-                            <a href="#card-slide13" 
-                            class="card-navigation-button">Slide 13</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide14" 
-                            class="card-navigation-button">Slide 14</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide15" 
-                            class="card-navigation-button">Slide 15</a>
-                        </li>
-                        <li class="card-navigation-item">
-                            <a href="#card-slide16" 
-                            class="card-navigation-button">Slide 16</a>
-                        </li>
-                    </ol>
-                </aside>
+            <div class="swiper swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                    <div class="swiper-slide"><img src="assets/placeholder.webp" alt="placeholder"></div>
+                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
         <a href="projects.html"><button>View More</button></a>
     </div>
     <div id="about-me" class="about-me">
         <div class="about-me-image">
-            <div class="img-backdrop"></div>
             <img src="assets/about me image.webp" alt="about image">
         </div>
-        <div class="about-me-text">
+        <div class="about-me-info">
             <h1>About me</h1>
-            <p>Hello there I take pictures and I do it good. Hire me.
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat iste, officiis dolore aliquam optio autem? Ipsam perferendis provident cum, tenetur nemo accusantium dicta dolores soluta sed inventore libero nam consectetur.
             </p>
+            <div class="about-me-stats">
+                <div class="about-me-stat">
+                    <img src="assets/picture-stat.png" alt="pictures">
+                    <h4>Pictures Taken</h4>
+                    <h1 id="stat-pictures">{n}</h1>
+                </div>
+                <div class="about-me-stat">
+                    <img src="assets/person-stat.png" alt="customers">
+                    <h4>Satisifed Costumers</h4>
+                    <h1 id="stat-costumers">{n}</h1>
+                </div>
+            </div>
         </div>
     </div>
     <div id="contact-me" class="contact-me">
         <h1>Get In Touch</h1>
         <p>Email: lud@gmail.com</p>
-        <div class="input-section">
+        <form id="contact-form" class="input-section" method="POST">
             <div class="contact-username">
                 <div class="contact-input">
                     <label for="name">Name</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" name="name">
                 </div>
                 <div class="contact-input">
                     <label for="surname">Surname</label>
-                    <input type="text" id="surname">
+                    <input type="text" id="surname" name="surname">
                 </div>
             </div>
             <div class="contact-creds">
                 <div class="contact-input">
                     <label for="phone">Phone Number</label>
-                    <input type="text" id="phone">
+                    <input type="text" id="phone" name="phone">
                 </div>
                 <div class="contact-input">
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="contact-input">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message">
                 </div>
             </div>
-            <button>Contact Me</button>
-        </div>
+            <input class="submit" type="submit" value="Contact Me"/>
+        </form>
     </div>
 </body>
 </html>
