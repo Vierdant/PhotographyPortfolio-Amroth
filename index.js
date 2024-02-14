@@ -27,6 +27,7 @@ const parseDirectoryContnet = async (directory) => {
     const htmlDocument = parser.parseFromString(directoryContent, 'text/html');
     const qDirs = Array.from(htmlDocument.querySelectorAll(`ul a[href*="/"]:not([href$="/"]):not([href="${PROJECT_ROOT.substring(1, PROJECT_ROOT.length)}"]).icon-directory`))
     const dirs = qDirs.map(dir => dir.getAttribute('href'));
+    console.log(directory);
     let images = [];
     for (const dir of dirs) {
         images = images.concat(await parseDirectoryContnet(dir));
