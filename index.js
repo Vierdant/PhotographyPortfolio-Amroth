@@ -1,5 +1,5 @@
 const PICTURE_COUNTER = document.getElementById('stat-pictures');
-const PROJECT_ROOT = './projects';
+const PROJECT_ROOT = '/projects';
 
 const swiper = new Swiper(".swiper-container", {
     pagination: {
@@ -25,7 +25,7 @@ const parseDirectoryContnet = async (directory) => {
     const directoryContent = await fetchDirectoryContent(directory);
     const parser = new DOMParser();
     const htmlDocument = parser.parseFromString(directoryContent, 'text/html');
-    const qDirs = Array.from(htmlDocument.querySelectorAll(`ul a[href*="/"]:not([href$="/"]):not([href="${PROJECT_ROOT.substring(1, PROJECT_ROOT.length)}"]).icon-directory`))
+    const qDirs = Array.from(htmlDocument.querySelectorAll(`ul a[href*="/"]:not([href$="/"]):not([href="${PROJECT_ROOT}"]).icon-directory`))
     const dirs = qDirs.map(dir => dir.getAttribute('href'));
     console.log(directory);
     let images = [];
